@@ -1,4 +1,4 @@
-import { Routes } from '@angular/router';
+import { Routes } from '@angular/router';   
 
 import { AddEmployeeComponent } from './components/add-employee/add-employee.component';
 import { DataBindingComponent } from './components/data-binding/data-binding.component';

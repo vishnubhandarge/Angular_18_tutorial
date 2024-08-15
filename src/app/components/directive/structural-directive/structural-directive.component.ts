@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { Route } from '@angular/router';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-structural-directive',
@@ -19,12 +19,11 @@ export class StructuralDirectiveComponent {
   isActive: boolean = false;
   selectedState: string = '';
 
-  constructor(private router: Route){
+  constructor(private route: Router){
    
   }
-
   navigateToAttribute() {
-    this.router.navigateByUrl("attribute-directive");
+    this.route.navigateByUrl("attribute-directive");
   }
   cityArray: string [] = ['Pune','Mumbai','Nagpur','Thane'];
 

@@ -19,6 +19,7 @@ export class StructuralDirectiveComponent {
   isActive: boolean = false;
   selectedState: string = '';
 
+  //Need to import import { Router } from '@angular/router';
   constructor(private route: Router){
    
   }

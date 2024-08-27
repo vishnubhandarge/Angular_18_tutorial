@@ -8,31 +8,68 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" routerLink="emp-list">Employee List</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" routerLink="add-emp">Add Employee</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" routerLink="structural-dir">Structural Directive</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" routerLink="attribute-directive">Attribute Directive</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" routerLink="ifelse">if</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" routerLink="for">for</a>
-                </li>
-                <li class="nav-item">
                     <a class="nav-link" routerLink="pipe">pipe</a>
+                </li>dzs
+                <!-- Dropdown Employee -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Employee
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" routerLink="add-emp">Add Employee</a></li>
+                        <li><a class="dropdown-item" routerLink="emp-list">Employee List</a></li>
+
+                    </ul>
+                </li>
+                <!-- Dropdown directives -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Directives
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" routerLink="structural-dir">Structural Directive</a></li>
+                        <li><a class="dropdown-item" routerLink="attribute-directive">Attribute Directive</a></li>
+
+                    </ul>
+                </li>
+                <!-- Dropdown control-flow -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        if-else
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" routerLink="ifelse">if-else</a></li>
+                        <li><a class="dropdown-item" routerLink="for">for</a></li>
+                        <li><a class="dropdown-item" routerLink="switch">switch</a></li>
+
+                    </ul>
+                </li>
+                <!-- Dropdown form -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Forms
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" routerLink="forms">form</a></li>
+                        <li><a class="dropdown-item" routerLink="rForm">rForm</a></li>
+                    </ul>
+                </li>
+                <!-- Dropdown API -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        API
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" routerLink="get">Get Api</a></li>
+                        <li><a class="dropdown-item" routerLink="post">Post Api</a></li>
+                    </ul>
                 </li>
             </ul>
-            <!-- <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                <button class="btn btn-outline-success" type="submit">Search</button>
-            </form> -->
         </div>
     </div>
 </nav>

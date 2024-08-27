@@ -9,32 +9,34 @@ import { IfelseComponent } from './components/control-flow/ifelse/ifelse.compone
 import { SwitchComponent } from './components/control-flow/switch/switch.component';
 import { ForComponent } from './components/control-flow/for/for.component';
 import { PipeComponent } from './components/pipe/pipe.component';
+import { TemplateComponent } from './components/forms/template/template.component';
+import { RectiveComponent } from './components/forms/rective/rective.component';
 
 export const routes: Routes = [
-    {
-        path: 'add-emp',
-        component: AddEmployeeComponent,
-    },
+    // {
+    //     path: 'add-emp',
+    //     component: AddEmployeeComponent,
+    // },
 
-    {
-        path: 'data-binding',
-        component: DataBindingComponent,
-    },
+    // {
+    //     path: 'data-binding',
+    //     component: DataBindingComponent,
+    // },
 
-    {
-        path: 'emp-list',
-        component: EmployeeListComponent,
-    },
+    // {
+    //     path: 'emp-list',
+    //     component: EmployeeListComponent,
+    // },
 
-    {
-        path: 'structural-dir',
-        component: StructuralDirectiveComponent,
-    },
+    // {
+    //     path: 'structural-dir',
+    //     component: StructuralDirectiveComponent,
+    // },
     
-    {
-        path: 'attribute-directive',
-        component: AttributeDirectiveComponent,
-    },
+    // {
+    //     path: 'attribute-directive',
+    //     component: AttributeDirectiveComponent,
+    // },
 
     {
         path: 'ifelse',
@@ -55,6 +57,18 @@ export const routes: Routes = [
         path: 'pipe',
         component: PipeComponent,
     },
+
+    {
+        path:'forms',
+        component: TemplateComponent
+    },
+
+    {
+        path: 'rForm',
+        component: RectiveComponent
+    },
+
+    
 
     
 

@@ -8,35 +8,37 @@ import { AttributeDirectiveComponent } from './components/directive/attribute-di
 import { IfelseComponent } from './components/control-flow/ifelse/ifelse.component';
 import { SwitchComponent } from './components/control-flow/switch/switch.component';
 import { ForComponent } from './components/control-flow/for/for.component';
-import { PipeComponent } from './components/pipe/pipe.component';
+import { PipeComponent } from './pipe/pipe.component';
 import { TemplateComponent } from './components/forms/template/template.component';
 import { RectiveComponent } from './components/forms/rective/rective.component';
+import { GetApiComponent } from './components/apiIntegration/get-api/get-api.component';
+import { PostApiComponent } from './components/apiIntegration/post-api/post-api.component';
 
 export const routes: Routes = [
-    // {
-    //     path: 'add-emp',
-    //     component: AddEmployeeComponent,
-    // },
+    {
+        path: 'add-emp',
+        component: AddEmployeeComponent,
+    },
 
-    // {
-    //     path: 'data-binding',
-    //     component: DataBindingComponent,
-    // },
+    {
+        path: 'data-binding',
+        component: DataBindingComponent,
+    },
 
-    // {
-    //     path: 'emp-list',
-    //     component: EmployeeListComponent,
-    // },
+    {
+        path: 'emp-list',
+        component: EmployeeListComponent,
+    },
 
-    // {
-    //     path: 'structural-dir',
-    //     component: StructuralDirectiveComponent,
-    // },
+    {
+        path: 'structural-dir',
+        component: StructuralDirectiveComponent,
+    },
     
-    // {
-    //     path: 'attribute-directive',
-    //     component: AttributeDirectiveComponent,
-    // },
+    {
+        path: 'attribute-directive',
+        component: AttributeDirectiveComponent,
+    },
 
     {
         path: 'ifelse',
@@ -68,10 +70,13 @@ export const routes: Routes = [
         component: RectiveComponent
     },
 
-    
+    {
+        path: 'get',
+        component: GetApiComponent
+    },
 
-    
-
-    
-
+    {
+        path: 'post',
+        component: PostApiComponent
+    }
 ];

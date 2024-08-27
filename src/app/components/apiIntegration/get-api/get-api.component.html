@@ -1,0 +1,22 @@
+<app-alert [alertType]="'Success'" [message]="'Welcome to get page'"></app-alert>
+
+<div class="row">
+    <div class="col-2">
+        <button class="btn btn-success" (click)="getAllUsers()">Get Users</button>
+        <button class="btn btn-success" (click)="getAllCustomers()">Get Customers</button>
+    </div>
+    <div class="col-3">
+        <select class="form-select">
+            @for(item of userList; track $index){
+                <option> {{item.name}}</option>option>
+            }
+        </select>
+    </div>
+    <div class="col-3">
+        <select class="form-select">
+            @for(item of cutstomerList; track $index){
+                <option> {{item.fullName}}</option>option>
+            }
+        </select>
+    </div>
+</div>

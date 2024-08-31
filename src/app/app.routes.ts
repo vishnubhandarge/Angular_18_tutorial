@@ -13,6 +13,7 @@ import { TemplateComponent } from './components/forms/template/template.componen
 import { RectiveComponent } from './components/forms/rective/rective.component';
 import { GetApiComponent } from './components/apiIntegration/get-api/get-api.component';
 import { PostApiComponent } from './components/apiIntegration/post-api/post-api.component';
+import { NgTemplateComponent } from './components/directive/ng-template/ng-template.component';
 
 export const routes: Routes = [
     {
@@ -78,5 +79,9 @@ export const routes: Routes = [
     {
         path: 'post',
         component: PostApiComponent
+    },
+    {
+        path: 'template',
+        component: NgTemplateComponent
     }
 ];
